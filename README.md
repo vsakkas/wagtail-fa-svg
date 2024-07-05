@@ -4,7 +4,6 @@
 ![Wagtail](https://img.shields.io/badge/wagtail-5.0+-4d4076)
 [![License](https://img.shields.io/badge/license-MIT-4d4076)](https://github.com/vsakkas/wagtail-fa-svg/blob/master/LICENSE)
 
-
 Font Awesome SVG icons for Wagtail.
 
 ## Installation
