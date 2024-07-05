@@ -5,7 +5,7 @@ description = "Font Awesome SVG icons for Wagtail"
 authors = ["vsakkas <vasileios.sakkas96@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-packages = [{ include = "wagtail-fa-svg" }]
+packages = [{ include = "wagtail_fa_svg" }]
 
 [tool.poetry.dependencies]
 python = "^3.10"
