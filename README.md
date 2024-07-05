@@ -36,9 +36,9 @@ from wagtail import hooks
 @hooks.register("register_icons")
 def register_icons(icons):
     return icons + [
-        "wagtail_fa_svg/v6/brands/github.svg",
-        "wagtail_fa_svg/v6/regular/pilcrow.svg",
-        "wagtail_fa_svg/v5/solid/columns.svg",
+        "wagtail-fa-svg/v6/brands/github.svg",
+        "wagtail-fa-svg/v6/regular/pilcrow.svg",
+        "wagtail-fa-svg/v5/solid/columns.svg",
     ]
 ```
 
