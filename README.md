@@ -1,8 +1,8 @@
 # Wagtail FA SVG
 
-[![Python](https://img.shields.io/badge/python-3.10+-2e1f5e.svg)](https://www.python.org/downloads/)
-![Wagtail](https://img.shields.io/badge/wagtail-5.0+-2e1f5e)
-[![License](https://img.shields.io/badge/license-MIT-2e1f5e)](https://github.com/vsakkas/wagtail-fa-svg/blob/master/LICENSE)
+[![Python](https://img.shields.io/badge/python-3.10+-4d4076.svg)](https://www.python.org/downloads/)
+![Wagtail](https://img.shields.io/badge/wagtail-5.0+-4d4076)
+[![License](https://img.shields.io/badge/license-MIT-4d4076)](https://github.com/vsakkas/wagtail-fa-svg/blob/master/LICENSE)
 
 
 Font Awesome SVG icons for Wagtail.
@@ -16,11 +16,33 @@ poetry add wagtail-fa-svg
 ```
 
 > [!TIP]
-> Make sure you're using the latest version to get access to the latest Font Awesome icons.
+> Make sure you're using the latest version to access the latest Font Awesome icons.
 
 ## Usage
 
-...
+Add `wagtail_fa_svg` to your installed apps:
+
+```python
+INSTALLED_APPS = [
+    "wagtail_fa_svg",
+]
+```
+
+Create a hook in your `wagtail_hooks.py` file to register icons:
+
+```python
+from wagtail import hooks
+
+@hooks.register("register_icons")
+def register_icons(icons):
+    return icons + [
+        "wagtail_fa_svg/v6/brands/github.svg",
+        "wagtail_fa_svg/v6/regular/pilcrow.svg",
+        "wagtail_fa_svg/v5/solid/columns.svg",
+    ]
+```
+
+Both Font Awesome 5 and 6 icons are supported.
 
 ## License
 
