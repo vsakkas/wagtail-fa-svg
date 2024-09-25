@@ -1,7 +1,7 @@
 # Wagtail FA SVG
 
 [![Python](https://img.shields.io/badge/python-3.10+-4d4076.svg)](https://www.python.org/downloads/)
-![Wagtail](https://img.shields.io/badge/wagtail-5.0+-4d4076)
+[![Wagtail](https://img.shields.io/badge/wagtail-5.0+-4d4076)](https://github.com/wagtail/wagtail)
 [![License](https://img.shields.io/badge/license-MIT-4d4076)](https://github.com/vsakkas/wagtail-fa-svg/blob/master/LICENSE)
 
 Font Awesome SVG icons for Wagtail.
@@ -41,7 +41,8 @@ def register_icons(icons):
     ]
 ```
 
-Both Font Awesome 5 and 6 icons are supported.
+> [!NOTE]
+> Both Font Awesome 5 and 6 icons are supported.
 
 ## License
 
