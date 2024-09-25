@@ -7,7 +7,7 @@ from tqdm import tqdm
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FA_VERSIONS = [
     "5.15.4",
-    "6.5.2",
+    "6.6.0",
 ]
 FA_DIRECTORIES = ["brands", "regular", "solid"]
 APP_NAME = "wagtail_fa_svg"
@@ -41,7 +41,7 @@ def process_svg(src_filename: str, directory: str, version: str) -> None:
             BASE_DIR,
             APP_NAME,
             "templates",
-            APP_NAME,
+            APP_NAME.replace("_", "-"),
             f"v{major_version}",
             directory,
             filename,
